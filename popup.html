@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackNLog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Track<span class="highlight">N</span>Log</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search logs...">
+      <select id="methodFilter">
+        <option value="all">All Methods</option>
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+      </select>
+      <button id="clearButton">ClearLogs</button>
+      <button id="exportButton">Export</button>
+    </div>
+    <div id="logContainer"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
